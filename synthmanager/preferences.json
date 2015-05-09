@@ -1,0 +1,17 @@
+{
+  "controller": "korg-ms20-legacy",
+  "synth": "roland-jx8p",
+  "mapping": "korg-ms20-legacy-roland-jx8p",
+  "midi": {
+    "in": {
+      "port": 0,
+      "channel": 1,
+      "portName": "MS-20 Controller IN"
+    },
+    "out": {
+      "port": 1,
+      "portName": "UM-1",
+      "channel": 1
+    }
+  }
+}

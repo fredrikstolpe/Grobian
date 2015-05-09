@@ -1,0 +1,8 @@
+{
+	"synth": "roland-jx8p",
+	"controller": "korg-ms20-legacy",
+	"parameters": {
+		"77": "dco1Range",
+		"12": "dco1Waveform"
+	}
+}

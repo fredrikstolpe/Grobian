@@ -1,0 +1,9 @@
+ {
+	"synth": "roland-jx8p",
+	"parameters": 
+	{
+		"dco1Range": "2",
+		"vcfCutoff": "110",
+		"dco1Waveform": "2"
+	}
+}

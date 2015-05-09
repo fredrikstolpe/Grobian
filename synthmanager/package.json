@@ -1,0 +1,18 @@
+{
+	"name": "Grobian",
+	"description": "Web-based midi synth manager",
+	"author": "Fredrik Stolpe <fredrik.stolpe@gmail.com>",
+	"dependencies": {
+		"angular": "latest",
+		"configure": "latest",
+		"express": "latest",
+		"http": "latest",
+		"jsonfile": "latest",
+		"midi": "latest",
+		"nconf": "latest",
+		"q": "latest",
+		"rfr": "latest",
+		"socket.io": "latest",
+		"ng-slider": "latest"
+	}
+}

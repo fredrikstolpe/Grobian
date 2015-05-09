@@ -1,0 +1,13 @@
+{
+	"preferencesFile" : "preferences.json",
+	"paths": {
+		"synthFolder": "synths",
+		"controllerFolder": "controllers",
+		"mappingFolder": "mappings",
+		"patchFolder": "patches"
+	},
+	"server": {
+		"port": 8080,
+		"publicFolder": "client"
+	}
+}
