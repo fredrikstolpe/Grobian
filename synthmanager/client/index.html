@@ -32,7 +32,7 @@
 		<div ng-repeat="(key, parameter) in parameters">
 			<div>{{parameter.label}}</div><br/>
 			<div>
-			<input ng-model="parameter.value" type="text" slider options="{from:0,to:127,step:1,skin:'round',realtime:true,floor:true,css: { background: {'background-color': 'black'}, before: {'background-color': 'black'}, default: {'background-color': 'black'}, after: {'background-color': 'black'}}}"/>
+			<input ng-model="parameter.value" type="text" slider options="parameter.options" options-bak="{from:0,to:127,step:1,skin:'round',realtime:true,floor:true,css: { background: {'background-color': 'black'}, before: {'background-color': 'black'}, default: {'background-color': 'black'}, after: {'background-color': 'black'}}}"/>
 			</div><br/>
 		</div>
 		</form>

@@ -11,4 +11,4 @@ module.exports = {
 		this.mapping = jsonFile.readFileSync(path);
 	}
 
-}
+};

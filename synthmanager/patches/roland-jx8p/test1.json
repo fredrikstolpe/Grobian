@@ -1,7 +1,9 @@
  {
 	"synth": "roland-jx8p",
+	"name": "Supersaw",
 	"parameters": 
 	{
+		"patchNameCharacter1": "33",
 		"dco1Range": "2",
 		"vcfCutoff": "110",
 		"dco1Waveform": "2"

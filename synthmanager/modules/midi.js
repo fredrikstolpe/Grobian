@@ -110,6 +110,7 @@ module.exports = {
 	},
 
 	sendSysex: function(template, number, value){
+		value = parseInt(value);
 		for (var i = 0; i < template.length; i++){
 			if (template[i] == 'c'){
 				template[i] = (outputChannel - 1);
@@ -121,8 +122,6 @@ module.exports = {
 				template[i] = value;
 			}
 		}
-		template.unshift(enums.sysex);
-		template.push(enums.endOfSysex);
 		this.sendMidiMessage(template);
 	},
 	
