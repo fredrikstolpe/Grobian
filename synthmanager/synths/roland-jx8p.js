@@ -55,10 +55,9 @@ module.exports = {
 			group: 'patchName',
 			number: 9,
 		},
-		patchNameCharacter11: {
-			label: 'Patch name, character 11',
-			group: 'patchName',
-			number: 10,
+		undefinedParameter10: {
+			label: 'Undefined parameter 10',
+			number: 10
 		},
 		dco1Range: {
 			label: 'DCO 1 Range',
@@ -168,6 +167,18 @@ module.exports = {
 			number: 22,
 			randomizeMax: 10
 		},
+		undefinedParameter23: {
+			label: 'Undefined parameter 23',
+			number: 23
+		},
+		undefinedParameter24: {
+			label: 'Undefined parameter 24',
+			number: 24
+		},
+		undefinedParameter25: {
+			label: 'Undefined parameter 25',
+			number: 25
+		},	
 		dcoEnvDynamics: {
 			label: 'DCO Dynamics',
 			group: 'dcoEnvMod',
@@ -189,28 +200,6 @@ module.exports = {
 				{ value: 64, label: 'Env 1 (inverted)' },
 				{ value: 96, label: 'Env 1' }
 			]
-		},
-		lfoWaveform: {
-			label: 'LFO waveform',
-			group: 'lfo',
-			number: 44,
-			items: [
-				{ value: 0, label: 'Random' },
-				{ value: 32, label: 'Square' },
-				{ value: 64, label: 'Sine' }
-			]
-		},
-		lfoDelay: {
-			label: 'LFO delay',
-			group: 'lfo',
-			number: 45,
-			defaultvalue: 50
-		},
-		lfoRate: {
-			label: 'LFO Rate',
-			group: 'lfo',
-			number: 46,
-			defaultvalue: 92
 		},
 		dco1Level: {
 			label: 'DCO 1 level',
@@ -331,15 +320,6 @@ module.exports = {
 			],
 			randomizeMax: 3
 		},
-		vcaEnvMode: {
-			label: 'VCA Env mode',
-			group: 'amplifier',
-			number: 58,
-			items: [
-				{ value: 0, label: 'Gate' },
-				{ value: 64, label: 'Env 2' }
-			]
-		},
 		chorus: {
 			label: 'Chorus',
 			group: 'chorus',
@@ -350,6 +330,28 @@ module.exports = {
 				{ value: 64, label: '2' }
 			]
 		},
+		lfoWaveform: {
+			label: 'LFO waveform',
+			group: 'lfo',
+			number: 44,
+			items: [
+				{ value: 0, label: 'Random' },
+				{ value: 32, label: 'Square' },
+				{ value: 64, label: 'Sine' }
+			]
+		},
+		lfoDelay: {
+			label: 'LFO delay',
+			group: 'lfo',
+			number: 45,
+			defaultvalue: 50
+		},
+		lfoRate: {
+			label: 'LFO Rate',
+			group: 'lfo',
+			number: 46,
+			defaultvalue: 92
+		},		
 		env1Attack: {
 			label: 'Env 1 attack',
 			group: 'envelope1',
@@ -420,6 +422,19 @@ module.exports = {
 				{ value: 96, label: '3' }
 			]
 		},
+		undefinedParameter57: {
+			label: 'Undefined parameter 57',
+			number: 57
+		},		
+		vcaEnvMode: {
+			label: 'VCA Env mode',
+			group: 'amplifier',
+			number: 58,
+			items: [
+				{ value: 0, label: 'Gate' },
+				{ value: 64, label: 'Env 2' }
+			]
+		},		
 		bendRange: {
 			label: 'Bend range',
 			group: 'patch',
@@ -535,5 +550,66 @@ module.exports = {
 		'patchNameCharacter8',
 		'patchNameCharacter9',
 		'patchNameCharacter10'
-	]	
-}
+	],
+	sysexDumpParameters : [
+		'patchNameCharacter1',
+		'patchNameCharacter2',
+		'patchNameCharacter3',
+		'patchNameCharacter4',
+		'patchNameCharacter5',
+		'patchNameCharacter6',
+		'patchNameCharacter7',
+		'patchNameCharacter8',
+		'patchNameCharacter9',
+		'patchNameCharacter10',
+		'undefinedParameter10',
+		'dco1Range',
+		'dco1Waveform',
+		'dco1Tune',
+		'dco1LfoModDepth',
+		'dco1EnvModDepth',
+		'undefinedParameter23',
+		'undefinedParameter24',
+		'undefinedParameter25',				
+		'dco2Range',
+		'dco2Waveform',
+		'dco2CrossMod',
+		'dco2Tune',
+		'dco2FineTune',
+		'dco2LfoModDepth',
+		'dco2EnvModDepth',
+		'dcoEnvDynamics',
+		'dcoEnvMode',
+		'dco1Level',
+		'dco2Level',
+		'mixerEnvModDepth',
+		'mixerEnvDynamics',
+		'mixerEnvMode',
+		'hpfCutoff',
+		'vcfCutoff',
+		'vcfResonance',
+		'vcfLfoModDepth',
+		'vcfEnvModDepth',
+		'vcfKeyFollow',
+		'vcfEnvDynamics',
+		'vcfEnvMode',
+		'vcaLevel',
+		'vcaEnvDynamics',
+		'chorus',
+		'lfoWaveform',
+		'lfoDelay',
+		'lfoRate',
+		'env1Attack',
+		'env1Decay',
+		'env1Sustain',
+		'env1Release',
+		'env1KeyFollow',
+		'env2Attack',
+		'env2Decay',
+		'env2Sustain',
+		'env2Release',
+		'env2KeyFollow',
+		'undefinedParameter57',
+		'vcaEnvMode'		
+	]
+};

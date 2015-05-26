@@ -38,6 +38,20 @@ process.stdin.on('data', function(chunk){
 		var filename = input.substring(5,input.length);
 		patchHandler.savePatch(synthHandler.synth.id, filename);
 	}
+	if (input.indexOf('load ') == 0){
+		var filename = input.substring(5,input.length);
+		patchHandler.loadPatch(synthHandler.synth.id, filename);
+	}	
+	if (input == 'dump'){
+		var values = [];
+		for (var i = 0; i < synthHandler.synth.sysexDumpParameters.length; i++) {
+			var param = synthHandler.synth.sysexDumpParameters[i];
+			values.push(patchHandler.patch.parameters[param]);
+		}
+		console.log(values);		
+		var template = synthHandler.getSysexDumpTemplate();
+		midi.sendSysexDump(template, values);
+	}
 });
 
 function socketConnect(){

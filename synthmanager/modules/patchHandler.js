@@ -6,8 +6,8 @@ module.exports = {
 
 	patch: null,
 
-	loadPatch: function(patchId){
-		var path = util.format("./%s/%s.json", config.paths.patchFolder, patchId);
+	loadPatch: function(synthId, patchId){
+		var path = util.format("./%s/%s/%s.json", config.paths.patchFolder, synthId, patchId);
 		this.patch = jsonFile.readFileSync(path);
 	},
 

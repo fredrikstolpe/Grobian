@@ -35,6 +35,10 @@ module.exports = {
 		return this.synth.sysexMessageTemplate.slice();
 	},
 	
+	getSysexDumpTemplate: function(){
+		return this.synth.sysexDumpMessageTemplate.slice();
+	},	
+	
 	// Translate incoming midi value from controller/sockets to the synth parameter value
 	translateValueForParameter : function(parameter, value, controllerParameterMaxValue){
 		

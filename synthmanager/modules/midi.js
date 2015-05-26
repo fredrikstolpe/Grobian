@@ -17,6 +17,12 @@ var midiInput = null;
 var midiOutput = null;
 var outputChannel = 1;
 
+// TODO Move
+function insertArrayAt(array, index, arrayToInsert) {
+    Array.prototype.splice.apply(array, [index, 0].concat(arrayToInsert));
+    return array;
+}
+
 module.exports = {
 
 	listOutputs: function(){
@@ -124,6 +130,23 @@ module.exports = {
 		}
 		this.sendMidiMessage(template);
 	},
+	
+	sendSysexDump: function(template, values){
+		var valueIndex = 0;
+		for (var i = 0; i < template.length; i++){
+			if (template[i] == 'c'){
+				template[i] = (outputChannel - 1);
+			}
+			else if (template[i] == 'v'){
+				valueIndex = i;
+			}
+		}
+		if (valueIndex != 0){
+			template.splice(valueIndex, 1);
+			insertArrayAt(template, valueIndex, values);
+		}
+		this.sendMidiMessage(template);
+	},	
 	
 	sendNrpn: function(number, value, omitValueLsb){
 		var cc = enums.cc + (outputChannel - 1);
